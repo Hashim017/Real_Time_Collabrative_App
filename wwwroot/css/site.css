@@ -1,0 +1,69 @@
+@import url('site.css');
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    height:100vh;
+}
+
+#documentEditor {
+    height: 80vh;
+    background-color: white;
+    font-size: 1em;
+    color: black;
+    margin-top: 10px;
+}
+
+.docContainer {
+    width: 90%;
+    margin: auto;
+}
+
+.imgcontainer{
+    display: flex;
+    justify-content: center;
+    margin-top:0;
+}
+
+img{
+    height: 400px;
+}
+
+@media print {
+    header{
+        display:none;
+    }
+    body {
+        background: none;
+    }
+
+    .container .ql-editor {
+        width: 9in;
+        height: 9in;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        align-self: flex-start;
+    }
+
+    .container .ql-toolbar.ql-snow {
+        display: none;
+    }
+}
